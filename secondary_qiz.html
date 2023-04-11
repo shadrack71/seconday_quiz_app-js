@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secondary_quiz application</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: rgb(87, 85, 97);
+        }
+        .container{
+            margin: 0 auto;
+            background-color: rgb(2, 48, 62);
+            display: grid;
+            row-gap: 5px;
+            place-content: center;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+           
+
+        }
+        h1{
+            text-transform: uppercase;
+            margin: 20px;
+            color: rgb(230, 149, 27);
+        }
+        h5{
+            text-align: center;
+            color: red;
+            font-style: italic;
+        }
+        #answer_textbox{
+            margin: 10px;
+            width: 100%;
+            height: 100px;
+            border-radius: 5px;
+            padding: 10px;
+            outline: none;
+            
+
+        }
+        #question_paragraph{
+            text-align: center;
+            text-transform:capitalize;
+            color: rgb(252, 252, 252);
+            font-weight: bold;
+
+        }
+        #result_paragraph{
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(252, 252, 252);
+            font-weight:bolder;
+            margin: 20px;
+
+        }
+        #question_paragraph:hover{
+            color: rgb(255, 0, 0);
+            width: auto;
+        }
+        #submit_btn{
+            width: auto;
+            padding: 5px;
+            margin: 0 auto;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: rgb(213, 82, 34);
+        }
+        #submit_btn:hover{
+            background-color: rgb(234, 44, 44);
+        }
+        #score_btn{
+            width: auto;
+            padding: 5px;
+            margin: 0 auto;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            display: none;
+            background-color: rgb(114, 65, 213);
+        }
+        #result_paragraph p{
+            text-transform: lowercase;
+            color: rgb(253, 247, 247);
+            border: 2px solid rgb(236, 219, 219);
+        }
+
+        /* .hidden{
+            display: none;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>secondary quiz application</h1>
+    <h5 id="Error_msg"></h5>
+    <p id="question_paragraph">click start</p>
+    <textarea id="answer_textbox" placeholder="write your answer here correctly"></textarea>
+    <button type="button" id="submit_btn">START</button>
+    <button type="button" id="score_btn" class="hidden">SCORE</button>
+    <div id="result_paragraph">
+       
+    </div>
+</div>
+  <script src="secondary_quiz.js"></script>  
+</body>
+</html>
